@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.ace</groupId>
     <artifactId>ace-dependency-management</artifactId>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <description>dependency management</description>
     <packaging>pom</packaging>
     <properties>
@@ -14,7 +14,7 @@
         <swagger2.version>2.8.0</swagger2.version>
         <mybatis.version>3.5.3</mybatis.version>
         <spring.boot.version>2.2.7.RELEASE</spring.boot.version>
-        <cas.version>6.2.0.RC5</cas.version>
+        <cas.version>6.2.0</cas.version>
         <com.graphql-java-kickstart.version>6.0.0</com.graphql-java-kickstart.version>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     </properties>
@@ -398,6 +398,13 @@
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct</artifactId>
                 <version>1.3.1.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-parent</artifactId>
+                <version>1.3.1.Final</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
